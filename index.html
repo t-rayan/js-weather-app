@@ -6,7 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather App</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
     <script defer src="./js/app.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="app">
+      <div class="search-box">
+        <input
+          type="text"
+          name="search-input"
+          id="search-input"
+          placeholder="Search new place"
+        />
+      </div>
+      <div class="display">
+        <div class="bg-image">
+          <div class="city-name">
+            <h1><i class="fas fa-map-marker-alt"></i> Barcelona</h1>
+            <p>Spain</p>
+          </div>
+          <div class="temp">
+            <img src="./icons/sun.svg" alt="" />
+            <h1>30˚c</h1>
+            <p>Sunny</p>
+          </div>
+        </div>
+      </div>
+      <div class="other-data">
+        <div class="forecast">
+          <h1 class="title">
+            3 Days <span class="second-text">Forecast</span>
+          </h1>
+          <div class="forecast-data">
+            <img src="./icons/Cloud.svg" class="w-icon" alt="" />
+            <div class="day">
+              <h3>Friday</h3>
+              <p>Cloudy</p>
+            </div>
+            <div class="high-min">27˚c / 18˚c</div>
+          </div>
+          <!-- <div class="forecast-data">
+            <img src="./icons/Cloud.svg" alt="" />
+            <div class="day">
+              <h3>Friday</h3>
+              <p>Cloudy</p>
+            </div>
+            <div class="high-min">27˚c / 18˚c</div>
+          </div>
+          <div class="forecast-data">
+            <img src="./icons/Cloud.svg" alt="" />
+            <div class="day">
+              <h3>Friday</h3>
+              <p>Cloudy</p>
+            </div>
+            <div class="high-min">27˚c / 18˚c</div>
+          </div> -->
+        </div>
+        <div class="fav-places">
+          <h1 class="title">
+            Favourite <span class="second-text">Places</span>
+          </h1>
+          <div class="place">
+            <div class="data">
+              <img src="./icons/cloud-lightning.svg" class="w-icon" alt="" />
+              <h2 class="place-temp">12˚c</h2>
+              <div class="place-name">
+                <h3>Kuala Lampur</h3>
+                <p>Malaysia</p>
+              </div>
+            </div>
+            <div class="extra-data">
+              <p>Humidity 48% &nbsp; |</p>
+              <p>West &nbsp; |</p>
+              <p>9.7km/h</p>
+            </div>
+          </div>
+          <!-- <div class="place">
+            <div class="data">
+              <img src="./icons/cloud-lightning.svg" alt="" />
+              <h2 class="place-temp">12˚c</h2>
+              <div class="place-name">
+                <h3>Kuala Lampur</h3>
+                <p>Malaysia</p>
+              </div>
+            </div>
+            <div class="extra-data">
+              <p>Humidity 48% &nbsp; |</p>
+              <p>West &nbsp; |</p>
+              <p>9.7km/h</p>
+            </div>
+          </div> -->
+        </div>
+        <div class="add-city">
+          <div class="add">
+            <i class="fas fa-plus"></i>
+            <p>Add City</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
